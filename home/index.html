@@ -1,0 +1,1457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../header/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>GEM</title>
+  </head>
+  <body>
+    <!-- SECTION: header -->
+    <header class="desktop-header">
+      <div class="primary-container">
+        <a href="/" class="logo">
+          <img src="../assets/svg/logo.svg" alt="Gems Dental Home" />
+        </a>
+        <div class="btn-container">
+          <button data-id="slide-banner">
+            Về Chúng Tôi
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+              <circle cx="2.99966" cy="2.53872" r="2.53872" fill="#00AD87" />
+            </svg>
+          </button>
+          <button data-id="section-mang-den-dich-vu">
+            Môi trường Tại Gems
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+              <circle cx="2.99966" cy="2.53872" r="2.53872" fill="#00AD87" />
+            </svg>
+          </button>
+          <button data-id="section-loi-ich-dac-biet">
+            Chế Độ Đãi Ngộ
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+              <circle cx="2.99966" cy="2.53872" r="2.53872" fill="#00AD87" />
+            </svg>
+          </button>
+          <button data-id="section-ket-noi-voi-chung-toi">
+            Liên Hệ
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+              <circle cx="2.99966" cy="2.53872" r="2.53872" fill="#00AD87" />
+            </svg>
+          </button>
+        </div>
+        <a href="/" class="apply-btn">
+          Ứng tuyển ngay
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12" fill="none">
+            <path
+              d="M13.7313 4.73531C12.8619 4.13552 12.2527 3.48739 11.8755 2.799C11.5063 2.01575 11.3006 1.38348 11.2334 0.891985C11.2146 0.74511 11.1982 0.61545 11.1841 0.50293H11.624C11.6405 0.620089 11.6606 0.760231 11.6842 0.923167L11.6867 0.940519L11.6905 0.957652C11.8201 1.55408 12.0947 2.20397 12.4945 2.90275L12.4998 2.91188L12.5054 2.92079C12.9833 3.68009 13.7072 4.31597 14.6444 4.84072L14.8887 4.40445L14.6444 4.84072C15.5331 5.33825 16.709 5.59197 18.1361 5.63885V6.03368C16.709 6.08056 15.5331 6.33425 14.6444 6.83181C13.7072 7.35658 12.9833 7.99245 12.5054 8.75173L12.4998 8.76063L12.4945 8.76977C12.0947 9.46853 11.8201 10.1184 11.6905 10.7149L11.6873 10.7295L11.685 10.7444C11.6595 10.9082 11.6381 11.0501 11.6207 11.1696H11.1905L11.2317 10.8474C11.3371 10.3078 11.5669 9.66732 11.9355 8.9214L11.9355 8.92144L11.9393 8.91355C12.2777 8.19741 12.8637 7.53576 13.7313 6.93722L15.0527 6.02566H13.4474H0.802734V5.64687H13.4474H15.0527L13.7313 4.73531Z"
+              fill="#282829"
+              stroke="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <button class="modal-menu-trigger">
+      <svg class="open-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path
+          d="M16.6667 5.83341H3.33333C2.83333 5.83341 2.5 5.50008 2.5 5.00008C2.5 4.50008 2.83333 4.16675 3.33333 4.16675H16.6667C17.1667 4.16675 17.5 4.50008 17.5 5.00008C17.5 5.50008 17.1667 5.83341 16.6667 5.83341ZM11.6667 10.8334H3.33333C2.83333 10.8334 2.5 10.5001 2.5 10.0001C2.5 9.50008 2.83333 9.16675 3.33333 9.16675H11.6667C12.1667 9.16675 12.5 9.50008 12.5 10.0001C12.5 10.5001 12.1667 10.8334 11.6667 10.8334ZM15 15.8334H3.33333C2.83333 15.8334 2.5 15.5001 2.5 15.0001C2.5 14.5001 2.83333 14.1667 3.33333 14.1667H15C15.5 14.1667 15.8333 14.5001 15.8333 15.0001C15.8333 15.5001 15.5 15.8334 15 15.8334Z"
+          fill="white"
+        />
+      </svg>
+      <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <g clip-path="url(#clip0_666_7498)">
+          <path
+            d="M0.683355 13.9996C0.548135 13.9996 0.415944 13.9595 0.303504 13.8844C0.191064 13.8093 0.103427 13.7026 0.0516767 13.5776C-7.33822e-05 13.4527 -0.013611 13.3152 0.0127761 13.1826C0.0391633 13.05 0.10429 12.9282 0.199918 12.8326L12.8327 0.199758C12.9609 0.0715425 13.1348 -0.000488281 13.3162 -0.000488281C13.4975 -0.000488281 13.6714 0.0715425 13.7996 0.199758C13.9278 0.327974 13.9999 0.501871 13.9999 0.683196C13.9999 0.86452 13.9278 1.03842 13.7996 1.16663L1.16679 13.7994C1.10337 13.863 1.02801 13.9134 0.945043 13.9478C0.86208 13.9821 0.773148 13.9997 0.683355 13.9996Z"
+            fill="white"
+          />
+          <path
+            d="M13.3164 13.9996C13.2266 13.9997 13.1376 13.9821 13.0547 13.9478C12.9717 13.9134 12.8964 13.863 12.8329 13.7994L0.200124 1.16663C0.0719087 1.03842 -0.00012207 0.86452 -0.00012207 0.683196C-0.00012207 0.501871 0.0719087 0.327974 0.200124 0.199758C0.32834 0.0715425 0.502238 -0.000488281 0.683562 -0.000488281C0.864886 -0.000488281 1.03878 0.0715425 1.167 0.199758L13.7998 12.8326C13.8954 12.9282 13.9606 13.05 13.987 13.1826C14.0133 13.3152 13.9998 13.4527 13.9481 13.5776C13.8963 13.7026 13.8087 13.8093 13.6962 13.8844C13.5838 13.9595 13.4516 13.9996 13.3164 13.9996Z"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_666_7498">
+            <rect width="14" height="14" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
+    <div class="modal-menu-overlay"></div>
+    <div class="modal-menu">
+      <svg
+        class="modal-menu-deco modal-menu-deco-1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="351"
+        height="144"
+        viewBox="0 0 351 144"
+        fill="none"
+      >
+        <path
+          opacity="0.2"
+          d="M176 142.59C67.2547 142.59 -20.9092 110.671 -20.9092 71.2951C-20.9092 31.9197 67.2547 0.000373268 176 0.000387528C284.746 0.000401789 372.909 31.9197 372.909 71.2952C372.884 110.671 284.745 142.59 176 142.59Z"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        />
+      </svg>
+      <svg
+        class="modal-menu-deco modal-menu-deco-2"
+        xmlns="http://www.w3.org/2000/svg"
+        width="351"
+        height="144"
+        viewBox="0 0 351 144"
+        fill="none"
+      >
+        <path
+          opacity="0.2"
+          d="M176 142.59C67.2547 142.59 -20.9092 110.671 -20.9092 71.2951C-20.9092 31.9197 67.2547 0.000373268 176 0.000387528C284.746 0.000401789 372.909 31.9197 372.909 71.2952C372.884 110.671 284.745 142.59 176 142.59Z"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        />
+      </svg>
+      <svg
+        class="modal-menu-deco modal-menu-deco-3"
+        xmlns="http://www.w3.org/2000/svg"
+        width="351"
+        height="144"
+        viewBox="0 0 351 144"
+        fill="none"
+      >
+        <path
+          opacity="0.2"
+          d="M176 142.59C67.2547 142.59 -20.9092 110.671 -20.9092 71.2951C-20.9092 31.9197 67.2547 0.000373268 176 0.000387528C284.746 0.000401789 372.909 31.9197 372.909 71.2952C372.884 110.671 284.745 142.59 176 142.59Z"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        />
+      </svg>
+      <svg
+        class="modal-menu-deco modal-menu-deco-4"
+        xmlns="http://www.w3.org/2000/svg"
+        width="351"
+        height="144"
+        viewBox="0 0 351 144"
+        fill="none"
+      >
+        <path
+          opacity="0.2"
+          d="M176 142.59C67.2547 142.59 -20.9092 110.671 -20.9092 71.2951C-20.9092 31.9197 67.2547 0.000373268 176 0.000387528C284.746 0.000401789 372.909 31.9197 372.909 71.2952C372.884 110.671 284.745 142.59 176 142.59Z"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        />
+      </svg>
+      <div class="btn-container">
+        <button data-id="">
+          <svg class="dot-active" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <circle cx="3.5" cy="3" r="3" fill="white" />
+          </svg>
+          Trang chủ
+        </button>
+        <button data-id="slide-banner">
+          <svg class="dot-active" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <circle cx="3.5" cy="3" r="3" fill="white" />
+          </svg>
+          Về chúng tôi
+        </button>
+        <button data-id="section-mang-den-dich-vu-mobile">
+          <svg class="dot-active" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <circle cx="3.5" cy="3" r="3" fill="white" />
+          </svg>
+          Môi trường tại Gems
+        </button>
+        <button data-id="section-loi-ich-dac-biet">
+          <svg class="dot-active" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <circle cx="3.5" cy="3" r="3" fill="white" />
+          </svg>
+          Chế độ đãi Ngộ
+        </button>
+        <button data-id="section-ket-noi-voi-chung-toi">
+          <svg class="dot-active" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <circle cx="3.5" cy="3" r="3" fill="white" />
+          </svg>
+          Liên hệ
+        </button>
+      </div>
+    </div>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- SECTION: mobile header -->
+        <header class="mobile-header">
+          <a href="/" class="logo">
+            <img src="../assets/svg/mobile-logo.svg" alt="Gems Dental Home" />
+          </a>
+        </header>
+
+        <!-- SECTION: banner -->
+        <section class="banner">
+          <div class="banner-content-container">
+            <svg
+              class="banner-deco banner-deco-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-deco banner-deco-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-deco banner-deco-3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-deco banner-deco-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-deco banner-deco-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-deco banner-deco-6"
+              xmlns="http://www.w3.org/2000/svg"
+              width="944"
+              height="343"
+              viewBox="0 0 944 343"
+              fill="none"
+            >
+              <path
+                opacity="0.2"
+                d="M472 342.443C211.885 342.443 1.00001 266.062 1.00002 171.838C1.00003 77.614 211.885 1.23241 472 1.23245C732.115 1.23248 943 77.6141 943 171.838C942.94 266.062 732.115 342.443 472 342.443Z"
+                stroke="url(#paint0_linear_700_12085)"
+                stroke-width="1.06524"
+                stroke-miterlimit="10"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_700_12085"
+                  x1="1.00002"
+                  y1="171.838"
+                  x2="715.354"
+                  y2="171.838"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="banner-deco-7"></div>
+            <div class="banner-deco-8"></div>
+            <div class="content-container">
+              <h1>CÙNG NHAU TẠO NÊN NHỮNG NỤ CƯỜI RỰC RỠ!</h1>
+              <div class="find-out-more-container">
+                <button>
+                  <svg
+                    class="background-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="47"
+                    height="29"
+                    viewBox="0 0 47 29"
+                    fill="none"
+                  >
+                    <ellipse cx="23.5477" cy="14.2518" rx="22.7059" ry="13.8456" fill="url(#paint0_linear_746_6594)" />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_746_6594"
+                        x1="23.5477"
+                        y1="0.40625"
+                        x2="23.5477"
+                        y2="21.4055"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#00AD87" />
+                        <stop offset="1" stop-color="#00C57E" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.40875 1.02905C3.40875 0.803304 3.22575 0.620299 3 0.620299C2.77425 0.620299 2.59125 0.803304 2.59125 1.02905L3.40875 1.02905ZM2.71097 9.00218C2.8706 9.16181 3.1294 9.16181 3.28903 9.00218L5.89033 6.40088C6.04995 6.24126 6.04995 5.98245 5.89033 5.82282C5.7307 5.66319 5.47189 5.66319 5.31226 5.82282L3 8.13508L0.68774 5.82282C0.528112 5.66319 0.269303 5.66319 0.109675 5.82282C-0.0499536 5.98245 -0.0499536 6.24126 0.109675 6.40088L2.71097 9.00218ZM2.59125 1.02905L2.59125 8.71314L3.40875 8.71314L3.40875 1.02905L2.59125 1.02905Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <h4>Tìm hiểu thêm về gems dental home!</h4>
+                <h4>Khám phá</h4>
+              </div>
+            </div>
+          </div>
+          <div id="slide-banner" class="banner-slide-container section-mobile">
+            <svg
+              class="banner-slide-deco-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1600"
+              height="476"
+              viewBox="0 0 1600 476"
+              fill="none"
+            >
+              <path
+                d="M1601.25 69.9715C1346.91 24.2634 1083.66 0.767673 815.147 0.767649C536.534 0.767625 263.344 26.0725 0.00761329 75.2818L-4.15258e-05 475.767C263.337 426.558 536.527 401.253 815.139 401.253C1083.65 401.253 1346.9 424.749 1601.24 470.457L1601.25 69.9715Z"
+                fill="url(#paint0_linear_815_1010)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_815_1010"
+                  x1="800.621"
+                  y1="0.767685"
+                  x2="800.62"
+                  y2="425.69"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#00AD87" />
+                  <stop offset="1" stop-color="#006063" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              class="banner-slide-deco-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="375"
+              height="112"
+              viewBox="0 0 375 112"
+              fill="none"
+            >
+              <path
+                d="M375 24C315.398 9.41935 253.708 0 190.785 0C125.577 0 61.6374 8.05147 0 23.7098L0.000228882 111.744C166.402 111.744 229.215 111.744 375 111.744L375 24Z"
+                fill="#00B189"
+              />
+            </svg>
+            <div class="swiper swiper-banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/image/banner-slide-img-1.jpg" alt="" />
+                  <div class="swiper-banner-deco"></div>
+                  <svg
+                    class="swiper-banner-deco-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="375"
+                    height="352"
+                    viewBox="0 0 375 352"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.5"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M190.785 0C253.708 0 315.398 9.41935 375 24L375 93V111.744V240V258L375 328C315.398 342.581 253.708 351.744 190.785 351.744C125.577 351.744 61.6374 343.692 0 328.034V258V93H0.00018015L0 23.7098C61.6374 8.05147 125.577 0 190.785 0Z"
+                      fill="url(#paint0_linear_700_15392)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_700_15392"
+                        x1="187.5"
+                        y1="0"
+                        x2="187.5"
+                        y2="351.744"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-opacity="0" />
+                        <stop offset="1" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/image/banner-slide-img-2.jpg" alt="" />
+                  <div class="swiper-banner-deco"></div>
+                  <svg
+                    class="swiper-banner-deco-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="375"
+                    height="352"
+                    viewBox="0 0 375 352"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.5"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M190.785 0C253.708 0 315.398 9.41935 375 24L375 93V111.744V240V258L375 328C315.398 342.581 253.708 351.744 190.785 351.744C125.577 351.744 61.6374 343.692 0 328.034V258V93H0.00018015L0 23.7098C61.6374 8.05147 125.577 0 190.785 0Z"
+                      fill="url(#paint0_linear_700_15392)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_700_15392"
+                        x1="187.5"
+                        y1="0"
+                        x2="187.5"
+                        y2="351.744"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-opacity="0" />
+                        <stop offset="1" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/image/banner-slide-img-1.jpg" alt="" />
+                  <div class="swiper-banner-deco"></div>
+                  <svg
+                    class="swiper-banner-deco-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="375"
+                    height="352"
+                    viewBox="0 0 375 352"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.5"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M190.785 0C253.708 0 315.398 9.41935 375 24L375 93V111.744V240V258L375 328C315.398 342.581 253.708 351.744 190.785 351.744C125.577 351.744 61.6374 343.692 0 328.034V258V93H0.00018015L0 23.7098C61.6374 8.05147 125.577 0 190.785 0Z"
+                      fill="url(#paint0_linear_700_15392)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_700_15392"
+                        x1="187.5"
+                        y1="0"
+                        x2="187.5"
+                        y2="351.744"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-opacity="0" />
+                        <stop offset="1" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/image/banner-slide-img-2.jpg" alt="" />
+                  <div class="swiper-banner-deco"></div>
+                  <svg
+                    class="swiper-banner-deco-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="375"
+                    height="352"
+                    viewBox="0 0 375 352"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.5"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M190.785 0C253.708 0 315.398 9.41935 375 24L375 93V111.744V240V258L375 328C315.398 342.581 253.708 351.744 190.785 351.744C125.577 351.744 61.6374 343.692 0 328.034V258V93H0.00018015L0 23.7098C61.6374 8.05147 125.577 0 190.785 0Z"
+                      fill="url(#paint0_linear_700_15392)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_700_15392"
+                        x1="187.5"
+                        y1="0"
+                        x2="187.5"
+                        y2="351.744"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-opacity="0" />
+                        <stop offset="1" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-banner-contents">
+                <div class="swiper-banner-content">
+                  <h2>Khoảnh khắc Teambulding với Gems Dental Home 2024</h2>
+                  <p>Mang đến môi trường chuyên nghiệp và tích cực, lành mạnh cho các thành viên đồng hành</p>
+                </div>
+                <div class="swiper-banner-content">
+                  <h2>Kiến tạo nụ cười tự tin cùng Gems Dental Home</h2>
+                  <p>
+                    Bác sĩ Gems Dental Home tận tâm tư vấn, đồng hành cùng bạn trên hành trình tìm lại nụ cười rạng rỡ
+                    và sự tự tin trong cuộc sống.
+                  </p>
+                </div>
+                <div class="swiper-banner-content">
+                  <h2>Khoảnh khắc Teambulding với Gems Dental Home 2024</h2>
+                  <p>Mang đến môi trường chuyên nghiệp và tích cực, lành mạnh cho các thành viên đồng hành</p>
+                </div>
+                <div class="swiper-banner-content">
+                  <h2>Kiến tạo nụ cười tự tin cùng Gems Dental Home</h2>
+                  <p>
+                    Bác sĩ Gems Dental Home tận tâm tư vấn, đồng hành cùng bạn trên hành trình tìm lại nụ cười rạng rỡ
+                    và sự tự tin trong cuộc sống.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-banner-pagination-container"></div>
+          </div>
+        </section>
+
+        <!-- SECTION: section 2 -->
+        <section id="section-mang-den-dich-vu" class="section-mang-den-dich-vu">
+          <div class="primary-container">
+            <div class="heading-container">
+              <div class="section-order">
+                <p>1</p>
+                <div class="divider"></div>
+                <p>Môi trường tại Gems Dental Home</p>
+              </div>
+              <h2>MANG ĐẾN DỊCH VỤ NHA KHOA UY TIN HÀNG ĐẦU</h2>
+            </div>
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="../assets/video/smiling-girl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="item-1">
+              <img src="../assets/svg/logo.svg" alt="Gems Dental Home" />
+            </div>
+            <div class="item-2">
+              <img src="../assets/image/item-2.jpg" alt="Gems Dental Home" />
+            </div>
+            <div class="item-3">
+              <p>CHÚNG TÔI LÀ</p>
+              <strong>30+</strong>
+              <p>THÀNH VIÊN GIÀU KINH NGHIỆM</p>
+            </div>
+            <div class="item-4">
+              <img src="../assets/image/item-4.jpg" alt="Gems Dental Home" />
+            </div>
+            <div class="item-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 60 64" fill="none">
+                <path
+                  d="M59.6818 37.5136C59.7579 36.846 59.8222 36.1667 59.869 35.4875H57.804H50.7024H50.2578H49.3687H48.2046H42.0272H40.6584H38.8215H38.5992H30.3277C30.2809 36.1725 30.2165 36.8518 30.1405 37.5252H38.4003C37.4527 45.7572 34.3815 52.7933 30.1405 57.0835C24.9927 51.8819 21.5589 42.6397 21.5589 32.1146C21.5589 21.5894 24.9927 12.3473 30.1405 7.14568C34.3815 11.4358 37.4527 18.472 38.4003 26.704C38.4764 27.3774 38.5466 28.0566 38.5934 28.7417H40.6525H48.1987H49.3453H50.211H50.2578H57.804H59.8573C59.3776 21.6939 57.4121 15.1455 54.1889 10.0426C50.3748 3.99336 45.2446 0.655273 39.7458 0.655273C38.102 0.655273 36.4933 0.957153 34.9431 1.53769C33.3929 0.957153 31.7843 0.655273 30.1405 0.655273C28.4967 0.655273 26.888 0.957153 25.3378 1.53769C23.7876 0.957153 22.1789 0.655273 20.5351 0.655273C15.0422 0.655273 9.90611 3.99336 6.08621 10.0484C2.35405 15.9582 0.300781 23.7955 0.300781 32.1204C0.300781 40.4395 2.35405 48.2767 6.08621 54.1866C9.90611 60.2474 15.0422 63.5797 20.541 63.5797C22.1848 63.5797 23.7935 63.2778 25.3437 62.6973C26.8938 63.2778 28.5025 63.5797 30.1463 63.5797C31.7901 63.5797 33.3988 63.2778 34.949 62.6973C36.4992 63.2778 38.1079 63.5797 39.7516 63.5797C45.2504 63.5797 50.3807 60.2416 54.2064 54.1866C57.1138 49.5771 58.9974 43.795 59.6877 37.5252C59.6818 37.5252 59.6818 37.5194 59.6818 37.5136ZM40.4712 37.5252H42.0272H48.0115C46.7304 48.6192 41.5943 57.5421 34.949 60.4912C33.8024 59.9804 32.6968 59.2953 31.6556 58.4535C32.8489 57.2344 33.9721 55.8121 34.9958 54.1866C37.8973 49.5771 39.7809 43.795 40.4712 37.5252ZM19.5114 32.1204C19.5114 40.4395 21.5647 48.2767 25.2969 54.1866C26.3206 55.8121 27.4437 57.2344 28.6429 58.4593C27.5958 59.3069 26.4961 59.9862 25.3437 60.497C17.6395 57.0777 11.9594 45.6527 11.9594 32.1204C11.9594 18.5881 17.6395 7.16309 25.3378 3.74373C26.4844 4.2546 27.59 4.93383 28.6371 5.78142C27.4379 7.00635 26.3206 8.42866 25.291 10.0542C21.5647 15.9582 19.5114 23.7955 19.5114 32.1204ZM40.4712 26.7098C39.7809 20.44 37.8973 14.6578 34.9899 10.0484C33.9662 8.42286 32.8431 7.00054 31.6497 5.78142C32.6968 4.93383 33.7966 4.2488 34.9431 3.73793C41.5943 6.68705 46.7304 15.6099 48.0057 26.704H40.4712V26.7098ZM39.7458 2.69296C48.6316 2.69296 56.0374 13.0613 57.611 26.7098H50.2169H50.0765C49.3862 20.44 47.5026 14.6578 44.5953 10.0484C42.6005 6.89024 40.2547 4.48101 37.6808 2.89034C38.3594 2.76262 39.0438 2.69296 39.7458 2.69296ZM30.1405 2.69296C30.8366 2.69296 31.5269 2.76262 32.2054 2.89034C31.4976 3.32574 30.8132 3.8192 30.1405 4.38232C29.4736 3.82501 28.7833 3.33155 28.0755 2.89034C28.7541 2.76262 29.4443 2.69296 30.1405 2.69296ZM20.5351 61.542C10.5086 61.542 2.35405 48.3406 2.35405 32.1204C2.35405 15.8944 10.5086 2.69876 20.5351 2.69876C21.2313 2.69876 21.9215 2.76843 22.6001 2.89615C20.0321 4.48682 17.6805 6.89605 15.6857 10.0542C11.9535 15.964 9.90026 23.8013 9.90026 32.1204C9.90026 40.4395 11.9535 48.2767 15.6857 54.1866C17.6746 57.3447 20.0262 59.7539 22.6001 61.3446C21.9215 61.4723 21.2371 61.542 20.5351 61.542ZM30.1405 61.542C29.4443 61.542 28.7541 61.4723 28.0755 61.3446C28.7833 60.9092 29.4736 60.4158 30.1405 59.8526C30.8073 60.41 31.4976 60.9034 32.2054 61.3446C31.5269 61.4723 30.8366 61.542 30.1405 61.542ZM39.7458 61.542C39.0497 61.542 38.3594 61.4723 37.6808 61.3446C40.2489 59.7539 42.6005 57.3447 44.5953 54.1866C47.5026 49.5771 49.3862 43.795 50.0765 37.5252H50.7083H57.6168C56.0374 51.1736 48.6257 61.542 39.7458 61.542Z"
+                  fill="#00B14F"
+                />
+              </svg>
+              <p>Tâm huyết và hết mình đồng hành trên con đường tìm lại sự tự tin với nụ cười hạnh phúc!</p>
+            </div>
+            <div class="item-6">
+              <img src="../assets/image/item-6.jpg" alt="Gems Dental Home" />
+            </div>
+            <div class="item-7">
+              <p>đồng hành cùng</p>
+              <strong>3000+</strong>
+              <p>nụ cười hạnh phúc</p>
+            </div>
+            <div class="item-8">
+              <img src="../assets/image/item-8.jpg" alt="Gems Dental Home" />
+            </div>
+            <div class="item-9">
+              <p>
+                Với đội ngũ có bề dày kinh nghiệm, sử dụng những công nghệ tiên tiến hàng đầu, mang tới dịch vụ nha khoa
+                chất lượng đỉnh cao, vì nụ cười Việt!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-mang-den-dich-vu-mobile" class="section-mang-den-dich-vu-mobile section-mobile">
+          <div class="section-order">
+            <p>1</p>
+            <div class="divider"></div>
+            <p>Môi trường tại Gems Dental Home</p>
+          </div>
+          <h2>MANG ĐẾN DỊCH VỤ NHA KHOA HÀNG ĐẦU</h2>
+          <p>
+            Tâm huyết và hết mình đồng hành trên con đường tìm lại sự tự tin với nụ cười hạnh phúc! Với đội ngũ có bề
+            dày kinh nghiệm, sử dụng những công nghệ tiên tiến hàng đầu, mang tới dịch vụ nha khoa chất lượng đỉnh cao,
+            vì nụ cười Việt!
+          </p>
+          <div class="item-mobile">
+            <img src="../assets/image/item-4.jpg" alt="" />
+            <div class="item-content-container">
+              <p>Chúng tôi là</p>
+              <strong>30+</strong>
+              <p>Thành viên giàu kinh nghiệm</p>
+            </div>
+          </div>
+          <div class="item-mobile">
+            <img src="../assets/image/item-6.jpg" alt="" />
+            <div class="item-content-container">
+              <p>đồng hành cùng</p>
+              <strong>300+</strong>
+              <p>nụ cười hạnh phúc</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: section 3 -->
+        <section class="section-moi-truong-ly-tuong">
+          <img class="section-bg-deco" src="../assets/image/section-moi-truong-ly-tuong-bg.jpg" alt="" />
+          <div class="heading-container">
+            <h2>MÔI TRƯỜNG LÝ TƯỞNG</h2>
+            <p>
+              Đến với Gems Dental Home cùng tinh thần cầu tiến và đổi mới, kết nối và chia sẻ, mang đến nụ cười hạnh
+              phúc đích thực!
+            </p>
+          </div>
+          <div class="item-container">
+            <div class="item-moi-truong-ly-tuong">
+              <div class="img-container">
+                <img src="../assets/image/moi-truong-ly-tuong-1.jpg" alt="" />
+                <div class="img-container-deco"></div>
+              </div>
+              <div class="content-container">
+                <h4>Môi Trường Tích Cực</h4>
+                <p>
+                  Chúng tôi xây dựng một môi trường làm việc thân thiện và hỗ trợ, khuyến khích sự gắn kết và hợp tác
+                  giữa các thành viên.
+                </p>
+                <button>
+                  Life at Gems
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                    <path
+                      d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                      fill="#282829"
+                      stroke="white"
+                      stroke-width="0.82875"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <img src="../assets/svg/moi-truong-ly-tuong-item-deco.svg" alt="" class="item-deco" />
+            </div>
+            <div class="item-moi-truong-ly-tuong">
+              <div class="img-container">
+                <img src="../assets/image/moi-truong-ly-tuong-2.jpg" alt="" />
+                <div class="img-container-deco"></div>
+              </div>
+              <div class="content-container">
+                <h4>Hợp Tác Và Đoàn Kết</h4>
+                <p>
+                  Cam kết vào sự hợp tác chặt chẽ và tính chuyên nghiệp giữa các thành viên, mang lại hiệu quả cao nhất
+                  trong công việc và phát triển bền vững.
+                </p>
+                <button>
+                  Ứng tuyển ngay
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                    <path
+                      d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                      fill="#282829"
+                      stroke="white"
+                      stroke-width="0.82875"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="item-moi-truong-ly-tuong">
+              <div class="img-container">
+                <img src="../assets/image/moi-truong-ly-tuong-3.jpg" alt="" />
+                <div class="img-container-deco"></div>
+              </div>
+              <div class="content-container">
+                <h4>Tự Do Thể Hiện</h4>
+                <p>
+                  Khuyến khích sự trao đổi ý tưởng và kinh nghiệm, từ đó tạo điều kiện cho mỗi người có thể tự do thể
+                  hiện bản thân.
+                </p>
+                <button>
+                  TÌm hiểu thêm
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                    <path
+                      d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                      fill="#282829"
+                      stroke="white"
+                      stroke-width="0.82875"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <img src="../assets/svg/moi-truong-ly-tuong-item-deco.svg" alt="" class="item-deco" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section-moi-truong-ly-tuong-mobile">
+          <img class="section-bg-deco" src="../assets/image/section-moi-truong-ly-tuong-bg-mobile.jpg" alt="" />
+          <h2>MÔI TRƯỜNG LÝ TƯỞNG</h2>
+          <p>
+            Đến với Gems Dental Home cùng tinh thần cầu tiến và đổi mới, kết nối và chia sẻ, mang đến nụ cười hạnh phúc
+            đích thực!
+          </p>
+          <div class="slide-container">
+            <div class="swiper swiper-moi-truong-ly-tuong">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item-moi-truong-ly-tuong">
+                    <div class="img-container">
+                      <img src="../assets/image/moi-truong-ly-tuong-1.jpg" alt="" />
+                      <div class="img-container-deco"></div>
+                    </div>
+                    <div class="content-container">
+                      <h4>Môi Trường Tích Cực</h4>
+                      <p>
+                        Chúng tôi xây dựng một môi trường làm việc thân thiện và hỗ trợ, khuyến khích sự gắn kết và hợp
+                        tác giữa các thành viên.
+                      </p>
+                      <button>
+                        Life at Gems
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                          <path
+                            d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                            fill="#282829"
+                            stroke="white"
+                            stroke-width="0.82875"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <img src="../assets/svg/moi-truong-ly-tuong-item-deco.svg" alt="" class="item-deco" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-moi-truong-ly-tuong">
+                    <div class="img-container">
+                      <img src="../assets/image/moi-truong-ly-tuong-2.jpg" alt="" />
+                      <div class="img-container-deco"></div>
+                    </div>
+                    <div class="content-container">
+                      <h4>Hợp Tác Và Đoàn Kết</h4>
+                      <p>
+                        Cam kết vào sự hợp tác chặt chẽ và tính chuyên nghiệp giữa các thành viên, mang lại hiệu quả cao
+                        nhất trong công việc và phát triển bền vững.
+                      </p>
+                      <button>
+                        Ứng tuyển ngay
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                          <path
+                            d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                            fill="#282829"
+                            stroke="white"
+                            stroke-width="0.82875"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <img src="../assets/svg/moi-truong-ly-tuong-item-deco.svg" alt="" class="item-deco" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-moi-truong-ly-tuong">
+                    <div class="img-container">
+                      <img src="../assets/image/moi-truong-ly-tuong-3.jpg" alt="" />
+                      <div class="img-container-deco"></div>
+                    </div>
+                    <div class="content-container">
+                      <h4>Tự Do Thể Hiện</h4>
+                      <p>
+                        Khuyến khích sự trao đổi ý tưởng và kinh nghiệm, từ đó tạo điều kiện cho mỗi người có thể tự do
+                        thể hiện bản thân.
+                      </p>
+                      <button>
+                        TÌm hiểu thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                          <path
+                            d="M11.3555 4.29256C10.635 3.79549 10.1301 3.25836 9.81748 2.68785C9.51153 2.03875 9.34102 1.51478 9.28539 1.10745C9.26982 0.985713 9.25618 0.878243 9.24448 0.78498H9.60908C9.62275 0.882077 9.63939 0.998218 9.65897 1.13325L9.66105 1.14763L9.66414 1.16183C9.77161 1.65612 9.99918 2.19472 10.3305 2.77383L10.3348 2.7814L10.3395 2.78878C10.7356 3.41806 11.3355 3.94504 12.1122 4.37992L12.3147 4.01836L12.1122 4.37993C12.8487 4.79225 13.8232 5.00252 15.0059 5.04137V5.36859C13.8232 5.40744 12.8487 5.61769 12.1122 6.03004C11.3355 6.46495 10.7356 6.99192 10.3395 7.62117L10.3348 7.62855L10.3305 7.63612C9.99917 8.21523 9.77161 8.75384 9.66414 9.24813L9.6615 9.26028L9.65959 9.27256C9.63849 9.40836 9.62072 9.52594 9.60635 9.62498H9.24976L9.28392 9.35795C9.37132 8.91074 9.56173 8.37997 9.8672 7.76179L9.86725 7.76182L9.87034 7.75529C10.1509 7.16178 10.6365 6.61344 11.3555 6.1174L12.4506 5.36194H11.1202H0.640938V5.04802H11.1202H12.4506L11.3555 4.29256Z"
+                            fill="#282829"
+                            stroke="white"
+                            stroke-width="0.82875"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <img src="../assets/svg/moi-truong-ly-tuong-item-deco.svg" alt="" class="item-deco" />
+                  </div>
+                </div>
+              </div>
+              <button class="swiper-moi-truong-ly-tuong-prev-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="32" viewBox="0 0 59 32" fill="none">
+                  <ellipse cx="29.5" cy="16" rx="29.5" ry="16" fill="url(#paint0_linear_700_15515)" />
+                  <path
+                    d="M26.0876 15.1909C26.8137 14.6662 27.3312 14.0924 27.654 13.4734C27.9608 12.7921 28.1372 12.2309 28.1952 11.7844C28.2214 11.5704 28.242 11.3987 28.2572 11.2692H27.6168C27.601 11.3895 27.5786 11.5546 27.5496 11.7642L27.5484 11.7731L27.5466 11.782C27.4451 12.2708 27.2284 12.8115 26.906 13.4017L26.9062 13.4018L26.9005 13.4113C26.5263 14.0341 25.9549 14.5634 25.2022 15.0049L25.066 14.7727L25.2022 15.0049C24.4733 15.4324 23.488 15.6481 22.2692 15.6753V16.3247C23.488 16.3519 24.4733 16.5675 25.2022 16.9951C25.9549 17.4366 26.5263 17.9659 26.9005 18.5886L26.9007 18.5885L26.906 18.5983C27.2284 19.1885 27.4451 19.7292 27.5466 20.218L27.5481 20.2256L27.5493 20.2332C27.5802 20.4419 27.6037 20.6079 27.6198 20.7308H28.2526L28.1961 20.268C28.1066 19.7847 27.9122 19.2193 27.6056 18.5694L27.6056 18.5694L27.6037 18.5652C27.3124 17.9195 26.8125 17.3329 26.0876 16.8091L25.4134 16.3218H26.2453H36.7308V15.6783H26.2453H25.4134L26.0876 15.1909Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="0.538315"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_700_15515"
+                      x1="29.5"
+                      y1="0"
+                      x2="29.5"
+                      y2="24.2668"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#00AD87" />
+                      <stop offset="1" stop-color="#00C57E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+              <button class="swiper-moi-truong-ly-tuong-next-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="32" viewBox="0 0 59 32" fill="none">
+                  <ellipse cx="29.5" cy="16" rx="29.5" ry="16" fill="url(#paint0_linear_700_15518)" />
+                  <path
+                    d="M32.9124 15.1909C32.1863 14.6662 31.6688 14.0924 31.346 13.4734C31.0392 12.7921 30.8628 12.2309 30.8048 11.7844C30.7786 11.5704 30.758 11.3987 30.7428 11.2692H31.3832C31.399 11.3895 31.4214 11.5546 31.4504 11.7642L31.4516 11.7731L31.4534 11.782C31.5549 12.2708 31.7716 12.8115 32.094 13.4017L32.0938 13.4018L32.0995 13.4113C32.4737 14.0341 33.0451 14.5634 33.7978 15.0049L33.934 14.7727L33.7978 15.0049C34.5267 15.4324 35.512 15.6481 36.7308 15.6753V16.3247C35.512 16.3519 34.5267 16.5675 33.7978 16.9951C33.0451 17.4366 32.4737 17.9659 32.0995 18.5886L32.0993 18.5885L32.094 18.5983C31.7716 19.1885 31.5549 19.7292 31.4534 20.218L31.4519 20.2256L31.4507 20.2332C31.4198 20.4419 31.3963 20.6079 31.3802 20.7308H30.7474L30.8039 20.268C30.8934 19.7847 31.0878 19.2193 31.3944 18.5694L31.3944 18.5694L31.3963 18.5652C31.6876 17.9195 32.1875 17.3329 32.9124 16.8091L33.5866 16.3218H32.7547H22.2692V15.6783H32.7547H33.5866L32.9124 15.1909Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="0.538315"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_700_15518"
+                      x1="29.5"
+                      y1="0"
+                      x2="29.5"
+                      y2="24.2668"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#00AD87" />
+                      <stop offset="1" stop-color="#00C57E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: section 4 -->
+        <section id="section-loi-ich-dac-biet" class="section-loi-ich-dac-biet section-mobile">
+          <div class="section-deco-1"></div>
+          <div class="section-deco-2"></div>
+          <div class="section-container">
+            <div class="left-col">
+              <div class="section-order">
+                <p>5</p>
+                <div class="divider"></div>
+                <p>Chế độ đãi ngộ</p>
+              </div>
+              <h2>LỢI ÍCH ĐẶC BIỆT</h2>
+              <p class="mobile-text">
+                Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và thân thiện, nơi mà mỗi nhân viên đều cảm thấy
+                được tôn trọng và khuyến khích phát triển. Đội ngũ của chúng tôi luôn hỗ trợ lẫn nhau để cùng đạt được
+                những thành công chung.
+              </p>
+              <img src="../assets/image/smiling-girl.png" alt="" class="desktop-image" />
+              <img src="../assets/image/smiling-girl-mobile.png" alt="" class="mobile-image" />
+              <div class="section-deco-3"></div>
+            </div>
+            <div class="right-col">
+              <p>
+                Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và thân thiện, nơi mà mỗi nhân viên đều cảm thấy
+                được tôn trọng và khuyến khích phát triển. Đội ngũ của chúng tôi luôn hỗ trợ lẫn nhau để cùng đạt được
+                những thành công chung.
+              </p>
+              <div class="accordion-container">
+                <div class="accordion">
+                  <button class="accordion-trigger">
+                    <div class="dot-active-container">
+                      <svg
+                        class="dot-active"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="9"
+                        viewBox="0 0 9 9"
+                        fill="none"
+                      >
+                        <circle cx="4.375" cy="4.4707" r="4.375" fill="url(#paint0_linear_1020_1657)" />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1020_1657"
+                            x1="4.375"
+                            y1="0.0957031"
+                            x2="4.375"
+                            y2="6.73115"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AD87" />
+                            <stop offset="1" stop-color="#00C57E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4>Môi trường làm việc chuyên nghiệp và thân thiện</h4>
+                    <svg
+                      class="arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.89453 11.2766L7.18808 5.98302C7.37113 5.79992 7.66793 5.79992 7.85098 5.98302L13.1445 11.2766"
+                        stroke="#222222"
+                        stroke-width="1.40625"
+                      />
+                    </svg>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và hỗ trợ, nơi mọi người có thể học hỏi lẫn
+                      nhau và cùng phát triển. Sự hợp tác và tinh thần đồng đội là nền tảng vững chắc để đạt được thành
+                      công.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <button class="accordion-trigger">
+                    <div class="dot-active-container">
+                      <svg
+                        class="dot-active"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="9"
+                        viewBox="0 0 9 9"
+                        fill="none"
+                      >
+                        <circle cx="4.375" cy="4.4707" r="4.375" fill="url(#paint0_linear_1020_1657)" />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1020_1657"
+                            x1="4.375"
+                            y1="0.0957031"
+                            x2="4.375"
+                            y2="6.73115"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AD87" />
+                            <stop offset="1" stop-color="#00C57E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4>Đào tạo và phát triển nghề nghiệp</h4>
+                    <svg
+                      class="arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.89453 11.2766L7.18808 5.98302C7.37113 5.79992 7.66793 5.79992 7.85098 5.98302L13.1445 11.2766"
+                        stroke="#222222"
+                        stroke-width="1.40625"
+                      />
+                    </svg>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và hỗ trợ, nơi mọi người có thể học hỏi lẫn
+                      nhau và cùng phát triển. Sự hợp tác và tinh thần đồng đội là nền tảng vững chắc để đạt được thành
+                      công.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <button class="accordion-trigger">
+                    <div class="dot-active-container">
+                      <svg
+                        class="dot-active"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="9"
+                        viewBox="0 0 9 9"
+                        fill="none"
+                      >
+                        <circle cx="4.375" cy="4.4707" r="4.375" fill="url(#paint0_linear_1020_1657)" />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1020_1657"
+                            x1="4.375"
+                            y1="0.0957031"
+                            x2="4.375"
+                            y2="6.73115"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AD87" />
+                            <stop offset="1" stop-color="#00C57E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4>Chế độ đãi ngộ hấp dẫn</h4>
+                    <svg
+                      class="arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.89453 11.2766L7.18808 5.98302C7.37113 5.79992 7.66793 5.79992 7.85098 5.98302L13.1445 11.2766"
+                        stroke="#222222"
+                        stroke-width="1.40625"
+                      />
+                    </svg>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và hỗ trợ, nơi mọi người có thể học hỏi lẫn
+                      nhau và cùng phát triển. Sự hợp tác và tinh thần đồng đội là nền tảng vững chắc để đạt được thành
+                      công.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <button class="accordion-trigger">
+                    <div class="dot-active-container">
+                      <svg
+                        class="dot-active"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="9"
+                        viewBox="0 0 9 9"
+                        fill="none"
+                      >
+                        <circle cx="4.375" cy="4.4707" r="4.375" fill="url(#paint0_linear_1020_1657)" />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1020_1657"
+                            x1="4.375"
+                            y1="0.0957031"
+                            x2="4.375"
+                            y2="6.73115"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AD87" />
+                            <stop offset="1" stop-color="#00C57E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4>Cơ hội thăng tiến</h4>
+                    <svg
+                      class="arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.89453 11.2766L7.18808 5.98302C7.37113 5.79992 7.66793 5.79992 7.85098 5.98302L13.1445 11.2766"
+                        stroke="#222222"
+                        stroke-width="1.40625"
+                      />
+                    </svg>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và hỗ trợ, nơi mọi người có thể học hỏi lẫn
+                      nhau và cùng phát triển. Sự hợp tác và tinh thần đồng đội là nền tảng vững chắc để đạt được thành
+                      công.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <button class="accordion-trigger">
+                    <div class="dot-active-container">
+                      <svg
+                        class="dot-active"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="9"
+                        viewBox="0 0 9 9"
+                        fill="none"
+                      >
+                        <circle cx="4.375" cy="4.4707" r="4.375" fill="url(#paint0_linear_1020_1657)" />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1020_1657"
+                            x1="4.375"
+                            y1="0.0957031"
+                            x2="4.375"
+                            y2="6.73115"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AD87" />
+                            <stop offset="1" stop-color="#00C57E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4>Văn hóa công ty tích cực</h4>
+                    <svg
+                      class="arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.89453 11.2766L7.18808 5.98302C7.37113 5.79992 7.66793 5.79992 7.85098 5.98302L13.1445 11.2766"
+                        stroke="#222222"
+                        stroke-width="1.40625"
+                      />
+                    </svg>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và hỗ trợ, nơi mọi người có thể học hỏi lẫn
+                      nhau và cùng phát triển. Sự hợp tác và tinh thần đồng đội là nền tảng vững chắc để đạt được thành
+                      công.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: section 5 -->
+        <section class="section-tham-gia-doi-ngu">
+          <img src="../assets/svg/section-tham-gia-doi-ngu-deco.svg" alt="" class="section-deco" />
+          <img src="../assets/svg/section-tham-gia-doi-ngu-deco-mobile.svg" alt="" class="section-deco-mobile" />
+          <img src="../assets/svg/logo.svg" alt="" class="logo" />
+          <h3>
+            Với sứ mệnh mang lại nụ cười tự tin cho mọi người, chúng tôi cam kết cung cấp dịch vụ chăm sóc nha khoa chất
+            lượng cao và tận tình nhất cho bệnh nhân.
+          </h3>
+          <img src="../assets/image/section-tham-gia-doi-ngu.png" alt="" class="section-bg-deco" />
+          <img src="../assets/image/section-tham-gia-doi-ngu-mobile.png" alt="" class="section-bg-deco-mobile" />
+          <div class="content-container">
+            <h2>THAM GIA ĐỘI NGŨ GEMS DENTAL HOME NGAY HÔM NAY!</h2>
+            <p>Chúng tôi đang tìm kiếm hơn 30 vị trí dành cho những nhân tố tài năng và nhiệt huyết</p>
+            <button>
+              Vị trí ứng tuyển
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path
+                  d="M11.752 4.2408C11.0315 3.74373 10.5266 3.2066 10.214 2.63609C9.90801 1.987 9.7375 1.46302 9.68187 1.0557C9.6663 0.933955 9.65267 0.826485 9.64096 0.733223H10.0056C10.0192 0.830319 10.0359 0.946461 10.0555 1.08149L10.0575 1.09587L10.0606 1.11007C10.1681 1.60436 10.3957 2.14296 10.727 2.72207L10.7313 2.72964L10.736 2.73702C11.1321 3.3663 11.732 3.89328 12.5087 4.32817L12.7112 3.9666L12.5087 4.32817C13.2452 4.74049 14.2197 4.95076 15.4024 4.98961V5.31683C14.2197 5.35568 13.2452 5.56593 12.5087 5.97828C11.732 6.41319 11.1321 6.94017 10.736 7.56941L10.7313 7.5768L10.727 7.58437C10.3957 8.16347 10.1681 8.70208 10.0606 9.19638L10.058 9.20852L10.0561 9.22081C10.035 9.3566 10.0172 9.47418 10.0028 9.57322H9.64625L9.6804 9.3062C9.7678 8.85898 9.95821 8.32821 10.2637 7.71003L10.2637 7.71006L10.2668 7.70353C10.5473 7.11002 11.033 6.56168 11.752 6.06564L12.847 5.31018H11.5167H1.03742V4.99626H11.5167H12.847L11.752 4.2408Z"
+                  fill="#282829"
+                  stroke="white"
+                  stroke-width="0.82875"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- SECTION: section 6 -->
+        <section id="section-ket-noi-voi-chung-toi" class="section-ket-noi-voi-chung-toi section-mobile">
+          <div class="section-container">
+            <div class="section-order">
+              <p>3</p>
+              <div class="divider"></div>
+              <p>Liên hệ</p>
+            </div>
+            <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+            <div class="content-container">
+              <div class="text-container">
+                <div class="first-row">
+                  <div class="first-col">
+                    <p>Liên hệ</p>
+                  </div>
+                  <div class="second-col">
+                    <p>Số điện thoại: (+84) 983 803 333</p>
+                    <p>Email: Huyen@gemsdentalhome.com</p>
+                  </div>
+                </div>
+                <div class="second-row">
+                  <div class="first-col">
+                    <p>Liên hệ</p>
+                  </div>
+                  <div class="second-col">
+                    <p>283, Xã Đàn, Hà Nội, Việt Nam</p>
+                    <button>
+                      Xem trên bản đồ
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                        <path
+                          d="M11.8594 4.85799C11.1389 4.36092 10.634 3.82379 10.3214 3.25328C10.0154 2.60418 9.84492 2.08021 9.7893 1.67288C9.77372 1.55114 9.76009 1.44367 9.74838 1.35041H10.113C10.1267 1.44751 10.1433 1.56365 10.1629 1.69868L10.165 1.71306L10.168 1.72726C10.2755 2.22155 10.5031 2.76015 10.8344 3.33926L10.8388 3.34683L10.8434 3.35421C11.2395 3.98349 11.8394 4.51047 12.6161 4.94535L12.8186 4.58379L12.6161 4.94536C13.3526 5.35768 14.3271 5.56795 15.5098 5.6068V5.93402C14.3271 5.97287 13.3526 6.18312 12.6161 6.59547C11.8394 7.03038 11.2395 7.55735 10.8434 8.1866L10.8388 8.19398L10.8344 8.20155C10.5031 8.78065 10.2755 9.31927 10.168 9.81356L10.1654 9.82571L10.1635 9.83799C10.1424 9.97379 10.1246 10.0914 10.1103 10.1904H9.75367L9.78783 9.92338C9.87522 9.47617 10.0656 8.9454 10.3711 8.32722L10.3712 8.32725L10.3742 8.32072C10.6548 7.72721 11.1404 7.17887 11.8594 6.68283L12.9545 5.92737H11.6241H1.14484V5.61345H11.6241H12.9545L11.8594 4.85799Z"
+                          fill="#282829"
+                          stroke="white"
+                          stroke-width="0.82875"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="image-container">
+                <svg
+                  class="image-container-deco"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="455"
+                  height="377"
+                  viewBox="0 0 455 377"
+                  fill="none"
+                >
+                  <path
+                    d="M0 185.326C0 266.976 19.228 341.471 50.8869 397.878L454.33 398.232L454.408 -20.8792L47.5792 -21.2334C17.9194 34.4109 0 106.509 0 185.326Z"
+                    fill="url(#paint0_linear_700_17392)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_700_17392"
+                      x1="227.203"
+                      y1="-21.2334"
+                      x2="227.203"
+                      y2="354.01"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#00AD87" />
+                      <stop offset="1" stop-color="#006063" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="../assets/image/section-ket-noi-voi-chung-toi.jpg" alt="" />
+              </div>
+              <img src="../assets/svg/section-ket-noi-voi-chung-toi-deco.svg" alt="" />
+            </div>
+          </div>
+          <div class="section-deco"></div>
+        </section>
+
+        <!-- SECTION: footer -->
+        <footer class="footer">
+          <svg
+            class="footer-bg-deco"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1600"
+            height="384"
+            viewBox="0 0 1600 384"
+            fill="none"
+          >
+            <path
+              d="M0.247192 470.815L0.24723 33.734C257.924 11.8343 530.879 0.81979 810.417 0.819815C1082.04 0.819839 1350.12 12.9988 1601.27 33.6736L1601.75 470.815L0.247192 470.815Z"
+              fill="#00B189"
+            />
+          </svg>
+          <img src="../assets/svg/footer-bg-deco-mobile.svg" alt="" class="footer-bg-deco-mobile" />
+          <img src="../assets/svg/footer-deco.svg" alt="" class="footer-deco" />
+          <div class="footer-container">
+            <div class="first-col">
+              <a href="/" class="logo">
+                <img src="../assets/svg/footer-logo.svg" alt="" />
+              </a>
+              <p>“Nơi mang lại nụ cười chân thật nhất”</p>
+              <div class="btn-container">
+                <a href="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <g clip-path="url(#clip0_700_12244)">
+                      <path
+                        d="M14.3447 12.0401L14.863 8.62752H11.621V6.41393C11.621 5.48007 12.0731 4.56927 13.5251 4.56927H15V1.66393C15 1.66393 13.6621 1.43335 12.3836 1.43335C9.71233 1.43335 7.96804 3.06818 7.96804 6.02655V8.62752H5V12.0401H7.96804V20.2904C8.56393 20.3849 9.17352 20.4333 9.79452 20.4333C10.4155 20.4333 11.0251 20.3849 11.621 20.2904V12.0401H14.3447Z"
+                        fill="#00B189"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_700_12244">
+                        <rect width="20" height="20" fill="white" transform="translate(0 0.93335)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                    <path
+                      d="M18.0475 6.91731C18.0552 7.09331 18.0552 7.26131 18.0552 7.43731C18.063 12.7733 14.1426 18.9333 6.97319 18.9333C4.85865 18.9333 2.7827 18.3013 1 17.1173C1.30869 17.1573 1.61738 17.1733 1.92608 17.1733C3.6779 17.1733 5.38343 16.5653 6.76482 15.4373C5.09789 15.4053 3.6316 14.2773 3.12226 12.6293C3.70877 12.7493 4.31072 12.7253 4.8818 12.5573C3.06824 12.1893 1.76401 10.5333 1.7563 8.60532C1.7563 8.58932 1.7563 8.57332 1.7563 8.55732C2.29651 8.86932 2.90617 9.04532 3.52356 9.06132C1.81803 7.87731 1.28554 5.51731 2.31966 3.6693C4.30301 6.19731 7.22015 7.72531 10.3534 7.89331C10.037 6.49331 10.4691 5.02131 11.4801 4.0293C13.0467 2.5013 15.5162 2.5813 16.998 4.2053C17.87 4.0293 18.7112 3.6933 19.4752 3.2213C19.182 4.1573 18.5723 4.9493 17.762 5.45331C18.5337 5.35731 19.29 5.14131 20 4.8213C19.4752 5.63731 18.8115 6.34131 18.0475 6.91731Z"
+                      fill="#00B189"
+                    />
+                  </svg>
+                </a>
+                <a href="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <g clip-path="url(#clip0_700_12248)">
+                      <path
+                        d="M18.5236 0.93335H1.47639C1.08483 0.93335 0.709301 1.0889 0.432425 1.36577C0.155548 1.64265 0 2.01818 0 2.40974V19.457C0 19.8485 0.155548 20.224 0.432425 20.5009C0.709301 20.7778 1.08483 20.9333 1.47639 20.9333H18.5236C18.9152 20.9333 19.2907 20.7778 19.5676 20.5009C19.8445 20.224 20 19.8485 20 19.457V2.40974C20 2.01818 19.8445 1.64265 19.5676 1.36577C19.2907 1.0889 18.9152 0.93335 18.5236 0.93335ZM5.96111 17.9708H2.95417V8.41946H5.96111V17.9708ZM4.45556 7.09585C4.11447 7.09393 3.7816 6.99101 3.49895 6.80009C3.21629 6.60917 2.99653 6.33879 2.8674 6.02309C2.73826 5.70739 2.70554 5.36051 2.77336 5.02623C2.84118 4.69195 3.0065 4.38525 3.24846 4.14483C3.49042 3.90442 3.79818 3.74107 4.13289 3.6754C4.4676 3.60973 4.81426 3.64468 5.12913 3.77584C5.44399 3.907 5.71295 4.12849 5.90205 4.41236C6.09116 4.69623 6.19194 5.02976 6.19167 5.37085C6.19488 5.59921 6.15209 5.82588 6.06584 6.03735C5.97959 6.24882 5.85165 6.44077 5.68964 6.60174C5.52763 6.76271 5.33487 6.88942 5.12285 6.97431C4.91083 7.0592 4.68389 7.10053 4.45556 7.09585ZM17.0444 17.9792H14.0389V12.7611C14.0389 11.2222 13.3847 10.7472 12.5403 10.7472C11.6486 10.7472 10.7736 11.4195 10.7736 12.8V17.9792H7.76667V8.42641H10.6583V9.75002H10.6972C10.9875 9.16252 12.0042 8.15835 13.5556 8.15835C15.2333 8.15835 17.0458 9.15418 17.0458 12.0709L17.0444 17.9792Z"
+                        fill="#00B189"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_700_12248">
+                        <rect width="20" height="20" fill="white" transform="translate(0 0.93335)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="divider-mobile"></div>
+            <div class="second-col">
+              <div class="kKao4-footer-container">
+                <p>
+                  <strong>GEMS DENTAL HOME</strong> cam kết là thương hiệu nha khoa đi đầu trong chất lượng và dịch vụ
+                  về răng miệng
+                </p>
+                <button class="scroll-to-top">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <g clip-path="url(#clip0_700_12274)">
+                      <path
+                        d="M13.957 26.9346C21.1367 26.9346 26.957 21.1143 26.957 13.9346C26.957 6.75487 21.1367 0.93457 13.957 0.93457C6.77733 0.93457 0.957031 6.75487 0.957031 13.9346C0.957031 21.1143 6.77733 26.9346 13.957 26.9346Z"
+                        fill="#F3F3F3"
+                      />
+                      <path
+                        d="M8.95703 15.5056L14.249 10.9346L19.541 15.5056"
+                        stroke="#00AD87"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_700_12274">
+                        <rect width="26" height="26" fill="white" transform="translate(0.957031 0.93457)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div class="btn-container">
+                <button>MÔI TRƯỜNG TẠI GEMS</button>
+                <button>CHẾ ĐỘ ĐÃI NGỘ</button>
+                <button>LIÊN HỆ</button>
+                <button>VỊ TRÍ TUYỂN DỤNG</button>
+              </div>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <div class="footer-bottom-container">
+            <p>Copyright © GEMS DENTAL HOME. Designed by OKHUB Viet Nam</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../utils/gsap.min.js"></script>
+    <script src="../utils/ScrollTrigger.min.js"></script>
+    <script src="../utils/ScrollSmoother.min.js"></script>
+    <script src="../utils/ScrollToPlugin.min.js"></script>
+    <script src="../utils/GSDevTools.min.js"></script>
+    <script src="../utils/kKao4DetectDirectionScroll.js"></script>
+    <script src="../utils/kKao4IsInViewport.js"></script>
+    <script src="../utils/kKao4PaginationSwapSwiper.js"></script>
+    <script src="../gsap/gsap.js"></script>
+    <script src="../header/script.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

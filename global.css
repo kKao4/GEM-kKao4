@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+html {
+  position: relative;
+  font-size: 1vw;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 4.267vw;
+  }
+}
+
+:root {
+  --Foundation-Grey-Darker: #2f2f2f;
+  --foundation-grey-normal-active: #6c6c6c;
+  --foundation-grey-dark-hover: #515151;
+  --primary-bonus-hover: #29a186;
+  --Foundation-Grey-Light: #f3f3f3;
+  --Foundation-Grey-Light-Active: #dadada;
+  --Primary-Bonus: #00b189;
+  --Grey-White: #fff;
+  --Foundation-Bonus: #00b189;
+  --Foundation-Grey-Normal: #878787;
+  --Text-Sub: #382e27;
+  --Foundation-Green-green-500: #00b14f;
+  --Foundation-Green-green-800: #346946;
+  --Green-Text: #00b189;
+  --primary-bonus-hover: #29a186;
+}
+
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url("./assets/font/SVN-Gilroy-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url("./assets/font/SVN-Gilroy-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url("./assets/font/SVN-Gilroy-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url("./assets/font/SVN-Gilroy-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--Foundation-Bonus);
+  border-radius: 0.5rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: SVN-Gilroy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.primary-container {
+  width: 87.5rem;
+  margin: auto;
+}
