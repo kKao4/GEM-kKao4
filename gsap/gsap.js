@@ -4,7 +4,6 @@ function init() {
   ScrollSmoother.create({
     smooth: 0.8,
     effects: true,
-    smoothTouch: 0.1,
   });
 }
 
