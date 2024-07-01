@@ -1,4 +1,128 @@
 function init() {
+  // animation
+  const item = document.querySelector(".section-mang-den-dich-vu").querySelector(".item-1");
+  console.log(parseFloat(item.offsetHeight) * 3);
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 769px)", () => {
+    gsap.from(".fadeInUp-banner", {
+      autoAlpha: 0,
+      y: "2rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-banner",
+      },
+    });
+    gsap.from(".fadeInUp-section-2", {
+      autoAlpha: 0,
+      y: "2rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-section-2",
+      },
+    });
+    gsap.from(".slideIn-item", {
+      yPercent: 102,
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        start: "top bottom",
+        toggleActions: "play play play none",
+        trigger: ".slideIn-item",
+        end: `+=${parseFloat(item.offsetHeight) * 2}`,
+      },
+    });
+    gsap.from(".item-moi-truong-ly-tuong", {
+      autoAlpha: 0,
+      y: "4rem",
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".item-moi-truong-ly-tuong",
+      },
+    });
+    gsap.from(".fadeInUp-left-col", {
+      autoAlpha: 0,
+      y: "4rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-left-col",
+      },
+    });
+    gsap.from(".fadeInUp-right-col", {
+      autoAlpha: 0,
+      y: "4rem",
+      duration: 0.8,
+      delay: 0.2,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-right-col",
+      },
+    });
+    gsap.from(".fadeInUp-heading-section-tham-gia-doi-ngu", {
+      autoAlpha: 0,
+      y: "2rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-heading-section-tham-gia-doi-ngu",
+      },
+    });
+    gsap.from(".fadeInUp-bg-section-tham-gia-doi-ngu", {
+      autoAlpha: 0,
+      y: "4rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-bg-section-tham-gia-doi-ngu",
+        markers: true
+      },
+    });
+    gsap.from(".fadeInUp-content-section-tham-gia-doi-ngu", {
+      autoAlpha: 0,
+      x: "4rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom-=60% bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-content-section-tham-gia-doi-ngu",
+        markers: true
+      },
+    });
+    gsap.from(".fadeInUp-heading-section-ket-noi-voi-chung-toi", {
+      autoAlpha: 0,
+      y: "2rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-heading-section-ket-noi-voi-chung-toi",
+        markers: true
+      },
+    });
+    gsap.from(".fadeInUp-content-section-ket-noi-voi-chung-toi", {
+      autoAlpha: 0,
+      y: "2rem",
+      duration: 0.8,
+      scrollTrigger: {
+        start: "bottom bottom",
+        toggleActions: "play pause play none",
+        trigger: ".fadeInUp-content-section-ket-noi-voi-chung-toi",
+        markers: true
+      },
+    });
+  });
+
   // SECTION: section 1
   const swiperBannerContents = document
     .querySelector(".swiper-banner-contents")

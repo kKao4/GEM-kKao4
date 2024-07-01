@@ -501,11 +501,18 @@
 .section-mang-den-dich-vu .item-8,
 .section-mang-den-dich-vu .item-9 {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 19.1rem;
   border-radius: 1.03906rem;
   overflow: hidden;
+}
+
+.section-mang-den-dich-vu .slideIn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .section-mang-den-dich-vu .item-1 img {
@@ -769,7 +776,7 @@
 /* SECTION: section 3 */
 .section-moi-truong-ly-tuong {
   padding-top: 15rem;
-  padding-bottom: 6.38rem;
+  padding-bottom: 3.5rem;
   height: 72.75rem;
   position: relative;
 }
@@ -1131,7 +1138,7 @@
 
 /* SECTION: section 4 */
 .section-loi-ich-dac-biet {
-  padding: 4rem 0;
+  padding: 6.5rem 0;
   height: 48.75rem;
   position: relative;
 }

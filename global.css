@@ -81,3 +81,13 @@ body {
   width: 87.5rem;
   margin: auto;
 }
+
+.fadeInUp {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .fadeInUp {
+    visibility: visible;
+  }
+}

@@ -371,8 +371,8 @@
             </svg>
             <div class="banner-deco-7"></div>
             <div class="banner-deco-8"></div>
-            <div class="content-container">
-              <h1>CÙNG NHAU TẠO NÊN NHỮNG NỤ CƯỜI RỰC RỠ!</h1>
+            <div class="content-container fadeInUp fadeInUp-banner">
+              <h1 class="heading-banner">CÙNG NHAU TẠO NÊN NHỮNG NỤ CƯỜI RỰC RỠ!</h1>
               <div class="find-out-more-container">
                 <button>
                   <svg
@@ -624,7 +624,7 @@
         <!-- SECTION: section 2 -->
         <section id="section-mang-den-dich-vu" class="section-mang-den-dich-vu">
           <div class="primary-container">
-            <div class="heading-container">
+            <div class="heading-container fadeInUp fadeInUp-section-2">
               <div class="section-order">
                 <p>1</p>
                 <div class="divider"></div>
@@ -632,50 +632,68 @@
               </div>
               <h2>MANG ĐẾN DỊCH VỤ NHA KHOA UY TIN HÀNG ĐẦU</h2>
             </div>
-            <div class="video-container">
+            <div class="video-container fadeInUp fadeInUp-section-2">
               <video autoplay muted loop>
                 <source src="../assets/video/smiling-girl.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="item-1">
-              <img src="../assets/svg/logo.svg" alt="Gems Dental Home" />
+              <div class="slideIn-item">
+                <img src="../assets/svg/logo.svg" alt="Gems Dental Home" />
+              </div>
             </div>
             <div class="item-2">
-              <img src="../assets/image/item-2.jpg" alt="Gems Dental Home" />
+              <div class="slideIn-item">
+                <img src="../assets/image/item-2.jpg" alt="Gems Dental Home" />
+              </div>
             </div>
             <div class="item-3">
-              <p>CHÚNG TÔI LÀ</p>
-              <strong>30+</strong>
-              <p>THÀNH VIÊN GIÀU KINH NGHIỆM</p>
+              <div class="slideIn-item">
+                <p>CHÚNG TÔI LÀ</p>
+                <strong>30+</strong>
+                <p>THÀNH VIÊN GIÀU KINH NGHIỆM</p>
+              </div>
             </div>
             <div class="item-4">
-              <img src="../assets/image/item-4.jpg" alt="Gems Dental Home" />
+              <div class="slideIn-item">
+                <img src="../assets/image/item-4.jpg" alt="Gems Dental Home" />
+              </div>
             </div>
             <div class="item-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 60 64" fill="none">
-                <path
-                  d="M59.6818 37.5136C59.7579 36.846 59.8222 36.1667 59.869 35.4875H57.804H50.7024H50.2578H49.3687H48.2046H42.0272H40.6584H38.8215H38.5992H30.3277C30.2809 36.1725 30.2165 36.8518 30.1405 37.5252H38.4003C37.4527 45.7572 34.3815 52.7933 30.1405 57.0835C24.9927 51.8819 21.5589 42.6397 21.5589 32.1146C21.5589 21.5894 24.9927 12.3473 30.1405 7.14568C34.3815 11.4358 37.4527 18.472 38.4003 26.704C38.4764 27.3774 38.5466 28.0566 38.5934 28.7417H40.6525H48.1987H49.3453H50.211H50.2578H57.804H59.8573C59.3776 21.6939 57.4121 15.1455 54.1889 10.0426C50.3748 3.99336 45.2446 0.655273 39.7458 0.655273C38.102 0.655273 36.4933 0.957153 34.9431 1.53769C33.3929 0.957153 31.7843 0.655273 30.1405 0.655273C28.4967 0.655273 26.888 0.957153 25.3378 1.53769C23.7876 0.957153 22.1789 0.655273 20.5351 0.655273C15.0422 0.655273 9.90611 3.99336 6.08621 10.0484C2.35405 15.9582 0.300781 23.7955 0.300781 32.1204C0.300781 40.4395 2.35405 48.2767 6.08621 54.1866C9.90611 60.2474 15.0422 63.5797 20.541 63.5797C22.1848 63.5797 23.7935 63.2778 25.3437 62.6973C26.8938 63.2778 28.5025 63.5797 30.1463 63.5797C31.7901 63.5797 33.3988 63.2778 34.949 62.6973C36.4992 63.2778 38.1079 63.5797 39.7516 63.5797C45.2504 63.5797 50.3807 60.2416 54.2064 54.1866C57.1138 49.5771 58.9974 43.795 59.6877 37.5252C59.6818 37.5252 59.6818 37.5194 59.6818 37.5136ZM40.4712 37.5252H42.0272H48.0115C46.7304 48.6192 41.5943 57.5421 34.949 60.4912C33.8024 59.9804 32.6968 59.2953 31.6556 58.4535C32.8489 57.2344 33.9721 55.8121 34.9958 54.1866C37.8973 49.5771 39.7809 43.795 40.4712 37.5252ZM19.5114 32.1204C19.5114 40.4395 21.5647 48.2767 25.2969 54.1866C26.3206 55.8121 27.4437 57.2344 28.6429 58.4593C27.5958 59.3069 26.4961 59.9862 25.3437 60.497C17.6395 57.0777 11.9594 45.6527 11.9594 32.1204C11.9594 18.5881 17.6395 7.16309 25.3378 3.74373C26.4844 4.2546 27.59 4.93383 28.6371 5.78142C27.4379 7.00635 26.3206 8.42866 25.291 10.0542C21.5647 15.9582 19.5114 23.7955 19.5114 32.1204ZM40.4712 26.7098C39.7809 20.44 37.8973 14.6578 34.9899 10.0484C33.9662 8.42286 32.8431 7.00054 31.6497 5.78142C32.6968 4.93383 33.7966 4.2488 34.9431 3.73793C41.5943 6.68705 46.7304 15.6099 48.0057 26.704H40.4712V26.7098ZM39.7458 2.69296C48.6316 2.69296 56.0374 13.0613 57.611 26.7098H50.2169H50.0765C49.3862 20.44 47.5026 14.6578 44.5953 10.0484C42.6005 6.89024 40.2547 4.48101 37.6808 2.89034C38.3594 2.76262 39.0438 2.69296 39.7458 2.69296ZM30.1405 2.69296C30.8366 2.69296 31.5269 2.76262 32.2054 2.89034C31.4976 3.32574 30.8132 3.8192 30.1405 4.38232C29.4736 3.82501 28.7833 3.33155 28.0755 2.89034C28.7541 2.76262 29.4443 2.69296 30.1405 2.69296ZM20.5351 61.542C10.5086 61.542 2.35405 48.3406 2.35405 32.1204C2.35405 15.8944 10.5086 2.69876 20.5351 2.69876C21.2313 2.69876 21.9215 2.76843 22.6001 2.89615C20.0321 4.48682 17.6805 6.89605 15.6857 10.0542C11.9535 15.964 9.90026 23.8013 9.90026 32.1204C9.90026 40.4395 11.9535 48.2767 15.6857 54.1866C17.6746 57.3447 20.0262 59.7539 22.6001 61.3446C21.9215 61.4723 21.2371 61.542 20.5351 61.542ZM30.1405 61.542C29.4443 61.542 28.7541 61.4723 28.0755 61.3446C28.7833 60.9092 29.4736 60.4158 30.1405 59.8526C30.8073 60.41 31.4976 60.9034 32.2054 61.3446C31.5269 61.4723 30.8366 61.542 30.1405 61.542ZM39.7458 61.542C39.0497 61.542 38.3594 61.4723 37.6808 61.3446C40.2489 59.7539 42.6005 57.3447 44.5953 54.1866C47.5026 49.5771 49.3862 43.795 50.0765 37.5252H50.7083H57.6168C56.0374 51.1736 48.6257 61.542 39.7458 61.542Z"
-                  fill="#00B14F"
-                />
-              </svg>
-              <p>Tâm huyết và hết mình đồng hành trên con đường tìm lại sự tự tin với nụ cười hạnh phúc!</p>
+              <div class="slideIn-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 60 64" fill="none">
+                  <path
+                    d="M59.6818 37.5136C59.7579 36.846 59.8222 36.1667 59.869 35.4875H57.804H50.7024H50.2578H49.3687H48.2046H42.0272H40.6584H38.8215H38.5992H30.3277C30.2809 36.1725 30.2165 36.8518 30.1405 37.5252H38.4003C37.4527 45.7572 34.3815 52.7933 30.1405 57.0835C24.9927 51.8819 21.5589 42.6397 21.5589 32.1146C21.5589 21.5894 24.9927 12.3473 30.1405 7.14568C34.3815 11.4358 37.4527 18.472 38.4003 26.704C38.4764 27.3774 38.5466 28.0566 38.5934 28.7417H40.6525H48.1987H49.3453H50.211H50.2578H57.804H59.8573C59.3776 21.6939 57.4121 15.1455 54.1889 10.0426C50.3748 3.99336 45.2446 0.655273 39.7458 0.655273C38.102 0.655273 36.4933 0.957153 34.9431 1.53769C33.3929 0.957153 31.7843 0.655273 30.1405 0.655273C28.4967 0.655273 26.888 0.957153 25.3378 1.53769C23.7876 0.957153 22.1789 0.655273 20.5351 0.655273C15.0422 0.655273 9.90611 3.99336 6.08621 10.0484C2.35405 15.9582 0.300781 23.7955 0.300781 32.1204C0.300781 40.4395 2.35405 48.2767 6.08621 54.1866C9.90611 60.2474 15.0422 63.5797 20.541 63.5797C22.1848 63.5797 23.7935 63.2778 25.3437 62.6973C26.8938 63.2778 28.5025 63.5797 30.1463 63.5797C31.7901 63.5797 33.3988 63.2778 34.949 62.6973C36.4992 63.2778 38.1079 63.5797 39.7516 63.5797C45.2504 63.5797 50.3807 60.2416 54.2064 54.1866C57.1138 49.5771 58.9974 43.795 59.6877 37.5252C59.6818 37.5252 59.6818 37.5194 59.6818 37.5136ZM40.4712 37.5252H42.0272H48.0115C46.7304 48.6192 41.5943 57.5421 34.949 60.4912C33.8024 59.9804 32.6968 59.2953 31.6556 58.4535C32.8489 57.2344 33.9721 55.8121 34.9958 54.1866C37.8973 49.5771 39.7809 43.795 40.4712 37.5252ZM19.5114 32.1204C19.5114 40.4395 21.5647 48.2767 25.2969 54.1866C26.3206 55.8121 27.4437 57.2344 28.6429 58.4593C27.5958 59.3069 26.4961 59.9862 25.3437 60.497C17.6395 57.0777 11.9594 45.6527 11.9594 32.1204C11.9594 18.5881 17.6395 7.16309 25.3378 3.74373C26.4844 4.2546 27.59 4.93383 28.6371 5.78142C27.4379 7.00635 26.3206 8.42866 25.291 10.0542C21.5647 15.9582 19.5114 23.7955 19.5114 32.1204ZM40.4712 26.7098C39.7809 20.44 37.8973 14.6578 34.9899 10.0484C33.9662 8.42286 32.8431 7.00054 31.6497 5.78142C32.6968 4.93383 33.7966 4.2488 34.9431 3.73793C41.5943 6.68705 46.7304 15.6099 48.0057 26.704H40.4712V26.7098ZM39.7458 2.69296C48.6316 2.69296 56.0374 13.0613 57.611 26.7098H50.2169H50.0765C49.3862 20.44 47.5026 14.6578 44.5953 10.0484C42.6005 6.89024 40.2547 4.48101 37.6808 2.89034C38.3594 2.76262 39.0438 2.69296 39.7458 2.69296ZM30.1405 2.69296C30.8366 2.69296 31.5269 2.76262 32.2054 2.89034C31.4976 3.32574 30.8132 3.8192 30.1405 4.38232C29.4736 3.82501 28.7833 3.33155 28.0755 2.89034C28.7541 2.76262 29.4443 2.69296 30.1405 2.69296ZM20.5351 61.542C10.5086 61.542 2.35405 48.3406 2.35405 32.1204C2.35405 15.8944 10.5086 2.69876 20.5351 2.69876C21.2313 2.69876 21.9215 2.76843 22.6001 2.89615C20.0321 4.48682 17.6805 6.89605 15.6857 10.0542C11.9535 15.964 9.90026 23.8013 9.90026 32.1204C9.90026 40.4395 11.9535 48.2767 15.6857 54.1866C17.6746 57.3447 20.0262 59.7539 22.6001 61.3446C21.9215 61.4723 21.2371 61.542 20.5351 61.542ZM30.1405 61.542C29.4443 61.542 28.7541 61.4723 28.0755 61.3446C28.7833 60.9092 29.4736 60.4158 30.1405 59.8526C30.8073 60.41 31.4976 60.9034 32.2054 61.3446C31.5269 61.4723 30.8366 61.542 30.1405 61.542ZM39.7458 61.542C39.0497 61.542 38.3594 61.4723 37.6808 61.3446C40.2489 59.7539 42.6005 57.3447 44.5953 54.1866C47.5026 49.5771 49.3862 43.795 50.0765 37.5252H50.7083H57.6168C56.0374 51.1736 48.6257 61.542 39.7458 61.542Z"
+                    fill="#00B14F"
+                  />
+                </svg>
+                <p>Tâm huyết và hết mình đồng hành trên con đường tìm lại sự tự tin với nụ cười hạnh phúc!</p>
+              </div>
             </div>
             <div class="item-6">
-              <img src="../assets/image/item-6.jpg" alt="Gems Dental Home" />
+              <div class="slideIn-item">
+                <img src="../assets/image/item-6.jpg" alt="Gems Dental Home" />
+              </div>
             </div>
             <div class="item-7">
-              <p>đồng hành cùng</p>
-              <strong>3000+</strong>
-              <p>nụ cười hạnh phúc</p>
+              <div class="slideIn-item">
+                <p>đồng hành cùng</p>
+                <strong>3000+</strong>
+                <p>nụ cười hạnh phúc</p>
+              </div>
             </div>
             <div class="item-8">
-              <img src="../assets/image/item-8.jpg" alt="Gems Dental Home" />
+              <div class="slideIn-item">
+                <img src="../assets/image/item-8.jpg" alt="Gems Dental Home" />
+              </div>
             </div>
             <div class="item-9">
-              <p>
-                Với đội ngũ có bề dày kinh nghiệm, sử dụng những công nghệ tiên tiến hàng đầu, mang tới dịch vụ nha khoa
-                chất lượng đỉnh cao, vì nụ cười Việt!
-              </p>
+              <div class="slideIn-item">
+                <p>
+                  Với đội ngũ có bề dày kinh nghiệm, sử dụng những công nghệ tiên tiến hàng đầu, mang tới dịch vụ nha
+                  khoa chất lượng đỉnh cao, vì nụ cười Việt!
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -947,7 +965,7 @@
           <div class="section-deco-1"></div>
           <div class="section-deco-2"></div>
           <div class="section-container">
-            <div class="left-col">
+            <div class="left-col fadeInUp-left-col">
               <div class="section-order">
                 <p>5</p>
                 <div class="divider"></div>
@@ -963,7 +981,7 @@
               <img src="../assets/image/smiling-girl-mobile.png" alt="" class="mobile-image" />
               <div class="section-deco-3"></div>
             </div>
-            <div class="right-col">
+            <div class="right-col fadeInUp-right-col">
               <p>
                 Chúng tôi tạo ra một môi trường làm việc chuyên nghiệp và thân thiện, nơi mà mỗi nhân viên đều cảm thấy
                 được tôn trọng và khuyến khích phát triển. Đội ngũ của chúng tôi luôn hỗ trợ lẫn nhau để cùng đạt được
@@ -1235,13 +1253,13 @@
           <img src="../assets/svg/section-tham-gia-doi-ngu-deco.svg" alt="" class="section-deco" />
           <img src="../assets/svg/section-tham-gia-doi-ngu-deco-mobile.svg" alt="" class="section-deco-mobile" />
           <img src="../assets/svg/logo.svg" alt="" class="logo" />
-          <h3>
+          <h3 class="fadeInUp-heading-section-tham-gia-doi-ngu">
             Với sứ mệnh mang lại nụ cười tự tin cho mọi người, chúng tôi cam kết cung cấp dịch vụ chăm sóc nha khoa chất
             lượng cao và tận tình nhất cho bệnh nhân.
           </h3>
-          <img src="../assets/image/section-tham-gia-doi-ngu.png" alt="" class="section-bg-deco" />
+          <img src="../assets/image/section-tham-gia-doi-ngu.png" alt="" class="section-bg-deco fadeInUp-bg-section-tham-gia-doi-ngu" />
           <img src="../assets/image/section-tham-gia-doi-ngu-mobile.png" alt="" class="section-bg-deco-mobile" />
-          <div class="content-container">
+          <div class="content-container fadeInUp-content-section-tham-gia-doi-ngu">
             <h2>THAM GIA ĐỘI NGŨ GEMS DENTAL HOME NGAY HÔM NAY!</h2>
             <p>Chúng tôi đang tìm kiếm hơn 30 vị trí dành cho những nhân tố tài năng và nhiệt huyết</p>
             <button>
@@ -1266,8 +1284,8 @@
               <div class="divider"></div>
               <p>Liên hệ</p>
             </div>
-            <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
-            <div class="content-container">
+            <h2 class="fadeInUp-heading-section-ket-noi-voi-chung-toi">KẾT NỐI VỚI CHÚNG TÔI</h2>
+            <div class="content-container fadeInUp-content-section-ket-noi-voi-chung-toi">
               <div class="text-container">
                 <div class="first-row">
                   <div class="first-col">
