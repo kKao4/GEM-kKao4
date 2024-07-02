@@ -85,7 +85,6 @@ function init() {
         start: "bottom-=60% bottom",
         toggleActions: "play pause play none",
         trigger: ".fadeInUp-bg-section-tham-gia-doi-ngu",
-        markers: true
       },
     });
     gsap.from(".fadeInUp-content-section-tham-gia-doi-ngu", {
@@ -96,7 +95,6 @@ function init() {
         start: "bottom-=60% bottom",
         toggleActions: "play pause play none",
         trigger: ".fadeInUp-content-section-tham-gia-doi-ngu",
-        markers: true
       },
     });
     gsap.from(".fadeInUp-heading-section-ket-noi-voi-chung-toi", {
@@ -107,7 +105,6 @@ function init() {
         start: "bottom bottom",
         toggleActions: "play pause play none",
         trigger: ".fadeInUp-heading-section-ket-noi-voi-chung-toi",
-        markers: true
       },
     });
     gsap.from(".fadeInUp-content-section-ket-noi-voi-chung-toi", {
@@ -118,7 +115,6 @@ function init() {
         start: "bottom bottom",
         toggleActions: "play pause play none",
         trigger: ".fadeInUp-content-section-ket-noi-voi-chung-toi",
-        markers: true
       },
     });
   });
